@@ -1,0 +1,23 @@
+<ui version="4.0" stdsetdef="1" >
+ <class>AttackWindowClass</class>
+ <widget class="QWidget" name="AttackWindowClass" >
+  <property name="objectName" >
+   <cstring>AttackWindowClass</cstring>
+  </property>
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>AttackWindow</string>
+  </property>
+ </widget>
+ <layoutDefault spacing="6" margin="11" />
+ <pixmapfunction></pixmapfunction>
+ <resources/>
+ <connections/>
+</ui>
