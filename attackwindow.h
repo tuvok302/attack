@@ -17,7 +17,6 @@ public:
     ~AttackWindow();
 
 private:
-    Ui::AttackWindowClass *ui;
 };
 
 #endif // ATTACKWINDOW_H

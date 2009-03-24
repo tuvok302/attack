@@ -1,13 +1,18 @@
 #include "attackwindow.h"
-#include "ui_attackwindow.h"
+
+#include <QtCore>
+#include <QLabel>
+#include <QPixmap>
 
 AttackWindow::AttackWindow(QWidget *parent)
-    : QWidget(parent), ui(new Ui::AttackWindowClass)
+    : QWidget(parent)
 {
-    ui->setupUi(this);
+
+    QPointer<QLabel> myLbl = new QLabel(this);    
+    QPixmap img = QPixmap(":/images/Logo.png");
+    myLbl->setPixmap(img);
 }
 
 AttackWindow::~AttackWindow()
 {
-    delete ui;
 }
