@@ -7,12 +7,11 @@ class Monster : public Creature
 {
 public:
     Monster();
-    Monster(int health, int healthRange, double minDamage, double maxDamage);
+    Monster(int health, int healthRange, int minDamage, int maxDamage);
     double Attack();//Don't forget to update the sprite
-    //void updateDamage(double newMin, double newMax);
     void Health(int minHealth, int maxHealth);
 private:
-
+protected:
 };
 
 #endif // MONSTER_H

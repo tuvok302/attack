@@ -5,7 +5,7 @@ Monster::Monster()
 {
 }
 
-Monster::Monster(int health, int healthRange, double MinDamage, double MaxDamage)
+Monster::Monster(int health, int healthRange, int MinDamage, int MaxDamage)
 {
     Health(health, healthRange);
     updateDamage(MinDamage, MaxDamage);
@@ -13,7 +13,8 @@ Monster::Monster(int health, int healthRange, double MinDamage, double MaxDamage
 
 double Monster::Attack()
 {
-    //stuff goes here
+    //updated the sprite
+    return (rand() % (maxDamage-minDamage) + minDamage);
 }
 
 void Monster::Health(int minHealth, int maxHealth)

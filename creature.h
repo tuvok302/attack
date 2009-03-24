@@ -7,11 +7,13 @@ public:
     Creature();
     void setHealth(int);
     virtual double Attack() = 0;
-    virtual void updateDamage(double newMin, double newMax);
+    virtual void updateDamage(int newMin, int newMax);
 
 private:
+
+protected:
+    int minDamage, maxDamage;
     int health;
-    double minDamage, maxDamage;
 };
 
 #endif // CREATURE_H
