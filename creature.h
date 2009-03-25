@@ -8,6 +8,7 @@ public:
     void setHealth(int);
     virtual double Attack() = 0;
     virtual void updateDamage(int newMin, int newMax);
+    virtual ~Creature();
 
 private:
 

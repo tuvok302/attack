@@ -10,6 +10,7 @@ public:
     Monster(int health, int healthRange, int minDamage, int maxDamage);
     double Attack();//Don't forget to update the sprite
     void Health(int minHealth, int maxHealth);
+    ~Monster();
 private:
 protected:
 };

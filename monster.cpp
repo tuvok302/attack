@@ -13,11 +13,15 @@ Monster::Monster(int health, int healthRange, int MinDamage, int MaxDamage)
 
 double Monster::Attack()
 {
-    //updated the sprite
+    //update the sprite
     return (rand() % (maxDamage-minDamage) + minDamage);
 }
 
 void Monster::Health(int minHealth, int maxHealth)
 {
-    this->setHealth((rand() % (maxHealth-minHealth) + minHealth));
+    /*this->*/setHealth((rand() % (maxHealth-minHealth) + minHealth));
+}
+
+Monster::~Monster()
+{
 }

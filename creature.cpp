@@ -14,3 +14,7 @@ void Creature::updateDamage(int newMin, int newMax)
     minDamage=newMin;
     maxDamage=newMax;
 }
+
+Creature::~Creature()
+{
+}
